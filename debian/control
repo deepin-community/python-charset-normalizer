@@ -1,15 +1,56 @@
-Source: template-repository
-Section: unknown
+Source: python-charset-normalizer
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Dominik George <natureshadow@debian.org>
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-pytest <!nocheck>,
+ python3-pytest-cov <!nocheck>,
+ python3-setuptools,
+ python3-sphinx,
+ furo <!nodoc>,
+Rules-Requires-Root: no
+Standards-Version: 4.6.2
+Homepage: https://github.com/ousret/charset_normalizer
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-charset-normalizer.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-charset-normalizer
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python-charset-normalizer-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends:
+ ${misc:Depends},
+ ${sphinxdoc:Depends},
+Description: charset, encoding and language detection for Python (Documentation)
+ charset-normalizer is a library for detection of charsets, encodings,
+ and languages in Python programs. It can be compared to chardet, with
+ a different approach, which intends to make it faster and more reliable.
+ charset-normalizer can also detect natural languages.
+ .
+ All IANA character set names for which the Python core library provides
+ codecs are supported.
+ .
+ This package contains the documentation.
+
+Package: python3-charset-normalizer
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Suggests:
+ python-charset-normalizer-doc,
+Description: charset, encoding and language detection (Python 3)
+ charset-normalizer is a library for detection of charsets, encodings,
+ and languages in Python programs. It can be compared to chardet, with
+ a different approach, which intends to make it faster and more reliable.
+ charset-normalizer can also detect natural languages.
+ .
+ All IANA character set names for which the Python core library provides
+ codecs are supported.
+ .
+ This package installs the library for Python 3.
