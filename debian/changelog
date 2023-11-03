@@ -1,5 +1,82 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-charset-normalizer (3.3.0-1) unstable; urgency=medium
+
+  * Team upload
+  * [83780c6] New upstream version 3.3.0
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 21 Oct 2023 19:13:06 +0200
+
+python-charset-normalizer (3.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * [c1ef4ce] New upstream version 3.2.0
+  * [79ae4c0] d/control: Suggesting package python-charset-normalizer-doc
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 23 Jul 2023 08:25:45 +0200
+
+python-charset-normalizer (3.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Fri, 23 Jun 2023 16:13:04 +0200
+
+python-charset-normalizer (3.1.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 3.1.0
+  * d/control: Bump Standards-Version to 4.6.2
+  * d/copyright: Update years of contributions
+  * d/control: Adding Rules-Requires-Root: no
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 08 Apr 2023 08:30:59 +0200
+
+python-charset-normalizer (3.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Source only upload
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 27 Nov 2022 09:00:14 +0100
+
+python-charset-normalizer (3.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * d/watch: Switch to git mode on the GitHub repository
+  * d/gbp.conf: Add some basic default configuration
+  * New upstream version 3.0.1
+  * d/control: Add BuildProfile information on some B-D
+  * d/control: Adjust binary package description
+  * d/rules: Remove "with=python3" from default target
+  * d/u/metadata: Add Documentation and FAQ entry
+  * d/README.source: Add some information about the source
+  * d/copyright: Update and add some content data
+  * Rebuild patch queue from patch-queue branch
+    Added patch:
+    docs-Prevent-possible-privacy-issue-to-a-linked-image.patch
+  * python-charset-normalizer-doc: Adding new binary package
+    Build a new binary packagepython-charset-normalizer-doc that contains the
+    Sphinx based documentation.
+  * autopkgtest: Adding a basic first test setup
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sat, 26 Nov 2022 12:27:52 +0100
+
+python-charset-normalizer (2.0.6-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure URI in debian/watch.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse.
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 28 Oct 2022 19:14:34 +0100
+
+python-charset-normalizer (2.0.6-2) unstable; urgency=medium
+
+  * source-only upload
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 24 Nov 2021 21:58:13 -0500
+
+python-charset-normalizer (2.0.6-1) unstable; urgency=low
 
   * Initial release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Dominik George <natureshadow@debian.org>  Mon, 27 Sep 2021 17:55:53 +0200
